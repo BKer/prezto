@@ -17,8 +17,8 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='vim'
+export VISUAL='vim'
 export PAGER='less'
 
 #
@@ -44,6 +44,7 @@ typeset -gU cdpath fpath mailpath path
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
+  $(ruby -rubygems -e "puts Gem.user_dir")/bin
   $path
 )
 
@@ -73,5 +74,15 @@ fi
 TMPPREFIX="${TMPDIR%/}/zsh"
 if [[ ! -d "$TMPPREFIX" ]]; then
   mkdir -p "$TMPPREFIX"
+fi
+
+# StartX
+# Moved this here, to not conflict with automatically starting Tmux
+# -> This file is sourced before the one that start tmux.
+# So like this I can automatically startx, still have tmux auto start on zsh and
+# no nested sessions or other drama.
+if [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+  exec startx -- /usr/bin/X -nolisten tcp :0 -novtswitch vt1
+  logout
 fi
 

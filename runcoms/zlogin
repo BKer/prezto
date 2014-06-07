@@ -20,3 +20,8 @@ if (( $+commands[fortune] )); then
   print
 fi
 
+# Start X
+if [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+  exec startx -- /usr/bin/X -nolisten tcp :0 -novtswitch vt1
+#  logout
+fi
