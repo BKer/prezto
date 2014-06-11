@@ -72,6 +72,9 @@ alias -s gif='animate'
 alias -s jpg='feh -FZ'
 alias -s jpeg='feh -FZ'
 alias -s png='feh -FZ'
+# Internet
+alias -s html='firefox'
+alias -s htm='firefox'
 ## LibreOffice
 # Word formats
 alias -s doc='libreoffice'
