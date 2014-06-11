@@ -34,6 +34,12 @@ alias pwbase='dd if=/dev/urandom bs=6 count=1 2> /dev/null | base64'
 # L = Long(er)
 alias pwbasel='dd if=/dev/urandom bs=12 count=1 2> /dev/null | base64'
 
+# Systemctl
+alias start='sudo systemctl start'
+alias stop='sudo systemctl stop'
+alias restart='sudo systemctl restart'
+alias status='systemctl status'
+
 # VirtualBox
 alias vboxmanager='vboxwebsrv --logfile ~/VBoxLog.log --pidfile /run/vboxwebsrv.pid --host 127.0.0.1 & firefox http://localhost/phpvirtualbox'
 
@@ -105,19 +111,6 @@ alias -s pdf='zathura'
 
 
 ### Functions
-# Just for convenience
-function start() {
-  sudo systemctl start $@
-}
-
-function stop() {
-  sudo systemctl stop $@
-}
-
-function restart() {
-  sudo systemctl restart $@
-}
-
 function timer() {
   start=`date +%s`
   $*
@@ -126,5 +119,4 @@ function timer() {
   duration=$[$stop - $start]
   echo "Duration: $duration s"
 }
-
 
