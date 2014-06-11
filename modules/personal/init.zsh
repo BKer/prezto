@@ -28,6 +28,11 @@ fi
 
 # "Security"
 alias pw='echo `< /dev/urandom tr -cd "[:graph:]" | head -c8`'
+# L = Long(er)
+alias pwl='echo `< /dev/urandom tr -cd "[:graph:]" | head -c12`'
+alias pwbase='dd if=/dev/urandom bs=6 count=1 2> /dev/null | base64'
+# L = Long(er)
+alias pwbasel='dd if=/dev/urandom bs=12 count=1 2> /dev/null | base64'
 
 # VirtualBox
 alias vboxmanager='vboxwebsrv --logfile ~/VBoxLog.log --pidfile /run/vboxwebsrv.pid --host 127.0.0.1 & firefox http://localhost/phpvirtualbox'
