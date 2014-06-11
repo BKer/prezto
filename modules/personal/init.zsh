@@ -67,11 +67,11 @@ alias -s txz='atool -l'
 alias -s xz='atool -l'
 alias -s zip='atool -l'
 # Images
-alias -s bmp='feh'
+alias -s bmp='feh -FZ'
 alias -s gif='animate'
-alias -s jpg='feh'
-alias -s jpeg='feh'
-alias -s png='feh'
+alias -s jpg='feh -FZ'
+alias -s jpeg='feh -FZ'
+alias -s png='feh -FZ'
 ## LibreOffice
 # Word formats
 alias -s doc='libreoffice'
