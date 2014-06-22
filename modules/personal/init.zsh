@@ -35,10 +35,10 @@ alias pwbase='dd if=/dev/urandom bs=6 count=1 2> /dev/null | base64'
 alias pwbasel='dd if=/dev/urandom bs=12 count=1 2> /dev/null | base64'
 
 # Systemctl
-alias start='sudo systemctl start'
-alias stop='sudo systemctl stop'
-alias restart='sudo systemctl restart'
-alias status='systemctl status'
+alias -g start='sudo systemctl start'
+alias -g stop='sudo systemctl stop'
+alias -g restart='sudo systemctl restart'
+alias -g status='systemctl status'
 
 # VirtualBox
 alias vboxmanager='vboxwebsrv --logfile ~/VBoxLog.log --pidfile /run/vboxwebsrv.pid --host 127.0.0.1 & firefox http://localhost/phpvirtualbox'
