@@ -46,6 +46,7 @@ path=(
   /usr/local/{bin,sbin}
   ~/.bin
   ~/.tmux/powerline/scripts
+  ~/.composer/vendor/bin
   $path
 )
 
