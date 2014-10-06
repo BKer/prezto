@@ -9,13 +9,15 @@
 alias c='pygmentize -O style=monokai -f console256 -g'
 alias CAT='pygmentize -O style=monokai -f console256 -g'
 
+alias cp="${aliases[cp]:-cp} --reflink=always"
+
 # Use vim as a pager
 alias less='/usr/share/vim/vim74/macros/less.sh'
 
-alias openports='netstat --all --numeric --programs --inet'
-
 alias mpvfs='mpv --fs'
 alias mpvns='mpv --no-audio'
+
+alias openports='netstat --all --numeric --programs --inet'
 
 # Power management
 if [[ $UID != 0 ]]; then
