@@ -9,7 +9,7 @@
 alias c='pygmentize -O style=monokai -f console256 -g'
 alias CAT='pygmentize -O style=monokai -f console256 -g'
 
-alias cp="${aliases[cp]:-cp} --reflink=always"
+alias cp="${aliases[cp]:-cp} --reflink=auto --sparse=always"
 
 # Use vim as a pager
 alias less='/usr/share/vim/vim74/macros/less.sh'
