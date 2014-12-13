@@ -15,8 +15,12 @@ alias cp="${aliases[cp]:-cp} --reflink=auto --sparse=always"
 alias less='/usr/share/vim/vim74/macros/less.sh'
 
 alias mpvfs='mpv --fs'
+alias mpvfsna='mpv --fs --no-audio'
+alias mpvfsns='mpv --fs --no-audio'
 alias mpvna='mpv --no-audio'
+alias mpvnafs='mpv --fs --no-audio'
 alias mpvns='mpv --no-audio'
+alias mpvnsfs='mpv --fs --no-audio'
 alias mpvnv='mpv --no-video'
 
 alias openports='netstat --all --numeric --programs --inet'
