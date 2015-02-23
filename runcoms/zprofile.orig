@@ -75,6 +75,11 @@ if [[ ! -d "$TMPDIR" ]]; then
 fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
+<<<<<<< HEAD
+if [[ ! -d "$TMPPREFIX" ]]; then
+  mkdir -p "$TMPPREFIX"
+fi
+
 # StartX
 # Moved this here, to not conflict with automatically starting Tmux
 # -> This file is sourced before the one that start tmux.
@@ -84,3 +89,6 @@ if [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]]; then
   exec startx -- /usr/bin/X -nolisten tcp :0 -novtswitch vt1
   logout
 fi
+
+=======
+>>>>>>> upstream/master
