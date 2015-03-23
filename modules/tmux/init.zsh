@@ -8,6 +8,8 @@
 #   Xavier Cambar <xcambar@gmail.com>
 #
 
+export POWERLINE_CONFIG_COMMAND=~/.tmux/powerline/scripts/powerline-config
+
 # Return if requirements are not found.
 if (( ! $+commands[tmux] )); then
   return 1
