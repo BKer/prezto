@@ -11,6 +11,8 @@ alias CAT='pygmentize -O style=monokai -f console256 -g'
 
 alias cp="${aliases[cp]:-cp} --reflink=auto --sparse=always"
 
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+
 # Use vim as a pager
 alias less='/usr/share/vim/vim74/macros/less.sh'
 
