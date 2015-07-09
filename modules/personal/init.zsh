@@ -16,6 +16,8 @@ alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 # Use vim as a pager
 alias less='/usr/share/vim/vim74/macros/less.sh'
 
+alias ls++='ls++ --potsf'
+
 alias mpvfs='mpv --fs'
 alias mpvfsna='mpv --fs --no-audio'
 alias mpvfsns='mpv --fs --no-audio'
