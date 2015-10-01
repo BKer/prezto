@@ -52,10 +52,6 @@ alias stop='sudo systemctl stop'
 alias restart='sudo systemctl restart'
 alias status='systemctl status'
 
-# Vim/Emacs Help me switch to emacs (spacemacs)
-alias vim='emacs -nw'
-alias gvim='emacs'
-
 # VirtualBox
 alias vboxmanager='vboxwebsrv --logfile ~/VBoxLog.log --pidfile /run/vboxwebsrv.pid --host 127.0.0.1 & firefox http://localhost/phpvirtualbox'
 
